@@ -1,0 +1,138 @@
+/* assets/style.css */
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --brand: #2563eb;
+  --brand-600: #1e40af;
+  --danger: #dc2626;
+  --success: #059669;
+  --radius: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.nav {
+  background: var(--card);
+  border-bottom: 1px solid #e2e8f0;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.04);
+}
+.grid {
+  display: grid;
+  gap: 16px;
+}
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-primary {
+  background: var(--brand);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--brand-600);
+}
+.btn-outline {
+  background: white;
+  border-color: #cbd5e1;
+}
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+.btn-success {
+  background: var(--success);
+  color: white;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+.label {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.field {
+  margin-bottom: 14px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.flash {
+  margin: 12px 0;
+  padding: 10px 12px;
+  background: #ecfeff;
+  border: 1px solid #bae6fd;
+  color: #0c4a6e;
+  border-radius: 10px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+.muted {
+  color: var(--muted);
+}
+.center {
+  text-align: center;
+}
