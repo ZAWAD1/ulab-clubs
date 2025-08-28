@@ -38,7 +38,8 @@
             <div class="header">
                 <h2>Welcome to ULAB Clubs</h2>
             </div>
-            <p class="muted">Discover student communities on campus. Log in to join exactly one club and view your
+            <p class="muted">Discover student communities on campus.
+                Log in to join exactly one club and view your
                 membership details.</p>
 
         </div>
